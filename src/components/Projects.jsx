@@ -69,7 +69,7 @@ const projects = [
       "It is a web application that allows users to track their budget. It is built with React JavaScript and uses a MySQL database to store expense data.",
     tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "MySQL"],
     github: "https://github.com/bulsu-ijosipagan/Budget-Tracker",
-    live: "https://business-expense-tracker-seven.vercel.app/login",
+    live: "https://budget-tracker-x8xh.vercel.app/login",
   },
 ];
 
