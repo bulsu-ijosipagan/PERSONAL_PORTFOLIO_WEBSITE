@@ -50,7 +50,7 @@ export default function Hero() {
 
           <div className="hero__socials">
             <a
-              href="https://github.com/issei-css"
+              href="https://github.com/bulsu-ijosipagan"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -58,7 +58,7 @@ export default function Hero() {
               <FiGithub />
             </a>
             <a
-              href="https://www.linkedin.com/in/issei-jansenn-sipagan-131b77378/"
+              href="https://www.linkedin.com/in/jansenn-sipagan-194179436/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
