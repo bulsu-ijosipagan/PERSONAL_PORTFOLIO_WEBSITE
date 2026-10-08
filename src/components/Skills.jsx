@@ -11,6 +11,7 @@ import {
   FaGift,
   FaGit,
   FaGithub,
+  FaPython,
 } from "react-icons/fa";
 import {
   SiFirebase,
@@ -26,6 +27,7 @@ const skills = [
   { name: "HTML", icon: <FaHtml5 />, color: "#e44d26", level: 90 },
   { name: "CSS", icon: <FaCss3Alt />, color: "#264de4", level: 85 },
   { name: "JavaScript", icon: <FaJsSquare />, color: "#f7df1e", level: 80 },
+  { name: "Python", icon: <FaPython />, color: "#3776ab", level: 60 },
   { name: "React", icon: <FaReact />, color: "#61dafb", level: 75 },
   { name: "PHP", icon: <FaPhp />, color: "#777bb4", level: 75 },
   { name: "MySQL", icon: <FaDatabase />, color: "#00758f", level: 75 },
@@ -49,10 +51,20 @@ const networkingSkills = [
   "LAN/WAN Design & Implementation",
 ];
 
-const certificates = Array.from({ length: 9 }, (_, i) => ({
-  src: `/images/cisco-cert-${i + 1}.png`,
-  alt: `Cisco Networking Certificate ${i + 1}`,
-}));
+const certificates = [
+  ...[1, 5, 6, 7, 8, 9].map((number) => ({
+    src: `/images/cisco-cert-${number}.png`,
+    alt: `Cisco Networking Certificate ${number}`,
+  })),
+  {
+    src: "/images/pyCert.png",
+    alt: "Certification",
+  },
+  {
+    src: "/images/PlatformAdmin.png",
+    alt: "Platform Administrator Certificate",
+  },
+];
 
 export default function Skills() {
   const [lightbox, setLightbox] = useState(null);
@@ -117,7 +129,7 @@ export default function Skills() {
         {/* ── Certificates Gallery ── */}
         <div className="certificates-section">
           <h3 className="certificates-section__title">
-            Cisco Networking Certificates
+            My Certificates & Achievements
           </h3>
           <p className="certificates-section__subtitle">
             Click any certificate to view it in full size

@@ -1,5 +1,11 @@
 import { Link } from "react-scroll";
-import { FiArrowDown, FiGithub, FiLinkedin, FiFacebook } from "react-icons/fi";
+import {
+  FiArrowDown,
+  FiDownload,
+  FiGithub,
+  FiLinkedin,
+  FiFacebook,
+} from "react-icons/fi";
 import "./Hero.css";
 
 export default function Hero() {
@@ -46,6 +52,14 @@ export default function Hero() {
             >
               Get in Touch
             </Link>
+            <a
+              href="/resume.html"
+              download="Issei-Jansenn-Sipagan-Resume.html"
+              className="btn btn--outline btn--resume"
+            >
+              <FiDownload aria-hidden="true" />
+              Download Resume
+            </a>
           </div>
 
           <div className="hero__socials">
