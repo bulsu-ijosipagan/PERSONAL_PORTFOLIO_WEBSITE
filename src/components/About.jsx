@@ -1,5 +1,5 @@
-import { FiBookOpen, FiMapPin, FiCalendar } from 'react-icons/fi'
-import './About.css'
+import { FiBookOpen, FiMapPin, FiCalendar } from "react-icons/fi";
+import "./About.css";
 
 export default function About() {
   return (
@@ -13,19 +13,22 @@ export default function About() {
         <div className="about__grid">
           <div className="about__text">
             <p>
-              I'm an Information Technology student at <strong>Bulacan State University</strong>,
-              expected to graduate in <strong>2027</strong>. I have a strong interest in web
-              development and software engineering, and I enjoy turning ideas into functional
-              and visually appealing digital products.
+              I'm an Information Technology student at{" "}
+              <strong>Bulacan State University</strong>, expected to graduate in{" "}
+              <strong>2027</strong>. I have a strong interest in web development
+              and software engineering, and I enjoy turning ideas into
+              functional and visually appealing digital products.
             </p>
             <p>
-              My journey into tech started with curiosity about how websites work, and since then
-              I've been continuously learning and improving my skills. I work with both frontend
-              and backend technologies, and I'm always eager to explore new tools and frameworks.
+              My journey into tech started with curiosity about how websites
+              work, and since then I've been continuously learning and improving
+              my skills. I work with both frontend and backend technologies, and
+              I'm always eager to explore new tools and frameworks.
             </p>
             <p>
-              When I'm not coding, I enjoy exploring design in Figma, studying new technologies,
-              and collaborating with fellow developers on meaningful projects.
+              When I'm not coding, I enjoy exploring design in Figma, studying
+              new technologies, learning new programming languages, and
+              collaborating with fellow developers on meaningful projects.
             </p>
           </div>
 
@@ -49,5 +52,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
