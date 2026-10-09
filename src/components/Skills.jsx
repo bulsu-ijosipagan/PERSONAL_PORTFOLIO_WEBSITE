@@ -24,11 +24,11 @@ import {
 import "./Skills.css";
 
 const skills = [
-  { name: "HTML", icon: <FaHtml5 />, color: "#e44d26", level: 90 },
-  { name: "CSS", icon: <FaCss3Alt />, color: "#264de4", level: 85 },
-  { name: "JavaScript", icon: <FaJsSquare />, color: "#f7df1e", level: 80 },
+  { name: "HTML", icon: <FaHtml5 />, color: "#e44d26", level: 100 },
+  { name: "CSS", icon: <FaCss3Alt />, color: "#264de4", level: 100 },
+  { name: "JavaScript", icon: <FaJsSquare />, color: "#f7df1e", level: 100 },
   { name: "Python", icon: <FaPython />, color: "#3776ab", level: 60 },
-  { name: "React", icon: <FaReact />, color: "#61dafb", level: 75 },
+  { name: "React", icon: <FaReact />, color: "#61dafb", level: 80 },
   { name: "PHP", icon: <FaPhp />, color: "#777bb4", level: 75 },
   { name: "MySQL", icon: <FaDatabase />, color: "#00758f", level: 75 },
   { name: "Firebase", icon: <SiFirebase />, color: "#ffca28", level: 70 },
