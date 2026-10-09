@@ -1,57 +1,53 @@
-import { useState } from 'react'
-import { FiMail, FiMapPin, FiSend } from 'react-icons/fi'
-import emailjs from '@emailjs/browser'
-import './Contact.css'
+import { useState } from "react";
+import { FiMail, FiMapPin, FiSend } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
+import "./Contact.css";
 
 // Initialize EmailJS - Replace with your Public Key from EmailJS
-emailjs.init('UB6YAWPzh7778jMio')
+emailjs.init("UB6YAWPzh7778jMio");
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
-  const [sent, setSent] = useState(false)
-  const [error, setError] = useState(false)
-  const [loading, setLoading] = useState(false)
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setLoading(true)
-    setError(false)
+    e.preventDefault();
+    setLoading(true);
+    setError(false);
 
     const templateParams = {
-      to_email: 'sipaganjansenn@gmail.com',
+      to_email: "sipaganjansenn@gmail.com",
       from_name: form.name,
       from_email: form.email,
       message: form.message,
-    }
+    };
 
     emailjs
-      .send(
-        'service_yisvaiq',
-        'template_uiwx9ml',
-        templateParams
-      )
+      .send("service_yisvaiq", "template_uiwx9ml", templateParams)
       .then(() => {
-        setSent(true)
-        setForm({ name: '', email: '', message: '' })
-        setLoading(false)
-        setTimeout(() => setSent(false), 4000)
+        setSent(true);
+        setForm({ name: "", email: "", message: "" });
+        setLoading(false);
+        setTimeout(() => setSent(false), 4000);
       })
       .catch((error) => {
-        console.error('Email sending failed:', error)
-        console.error('Error details:', {
+        console.error("Email sending failed:", error);
+        console.error("Error details:", {
           status: error.status,
           text: error.text,
-          message: error.message
-        })
-        setError(true)
-        setLoading(false)
-        setTimeout(() => setError(false), 4000)
-      })
-  }
+          message: error.message,
+        });
+        setError(true);
+        setLoading(false);
+        setTimeout(() => setError(false), 4000);
+      });
+  };
 
   return (
     <section className="contact section" id="contact">
@@ -124,17 +120,22 @@ export default function Contact() {
                 required
               ></textarea>
             </div>
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className="btn btn--primary contact__btn"
               disabled={loading}
             >
-              <FiSend /> {loading ? 'Sending...' : sent ? 'Sent!' : 'Send Message'}
+              <FiSend />{" "}
+              {loading ? "Sending..." : sent ? "Sent!" : "Send Message"}
             </button>
-            {error && <p className="contact__error">Failed to send message. Please try again.</p>}
+            {error && (
+              <p className="contact__error">
+                Failed to send message. Please try again.
+              </p>
+            )}
           </form>
         </div>
       </div>
     </section>
-  )
+  );
 }
