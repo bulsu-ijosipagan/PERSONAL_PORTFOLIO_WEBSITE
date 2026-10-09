@@ -52,7 +52,7 @@ const networkingSkills = [
 ];
 
 const certificates = [
-  ...[1, 5, 6, 7, 8, 9].map((number) => ({
+  ...[1, 5, 6, 7, 8, 9, 10, 11].map((number) => ({
     src: `/images/cisco-cert-${number}.png`,
     alt: `Cisco Networking Certificate ${number}`,
   })),
@@ -63,6 +63,10 @@ const certificates = [
   {
     src: "/images/PlatformAdmin.png",
     alt: "Platform Administrator Certificate",
+  },
+  {
+    src: "/images/PythonEssentials1.png",
+    alt: "Python Essentials 1 Certificate",
   },
 ];
 

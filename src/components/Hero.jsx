@@ -116,7 +116,9 @@ export default function Hero() {
   skills: [
     "HTML", "CSS", "JavaScript",
     "PHP", "MySQL", "Firebase",
-    "C#", "Supabase", "Cisco Networking"
+    "C#", "Supabase", "Cisco Networking", 
+    "TypeScript", "Git", "GitHub", "Python",
+    "React JS" 
   ],
   passion: "Building the web"
 };`}
