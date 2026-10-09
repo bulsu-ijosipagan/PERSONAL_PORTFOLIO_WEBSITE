@@ -53,8 +53,8 @@ export default function Hero() {
               Get in Touch
             </Link>
             <a
-              href="/resume.html"
-              download="Issei-Jansenn-Sipagan-Resume.html"
+              href="/Issei_Sipagan_CV_CICT.pdf"
+              download="Issei_Sipagan_CV_CICT.pdf"
               className="btn btn--outline btn--resume"
             >
               <FiDownload aria-hidden="true" />
