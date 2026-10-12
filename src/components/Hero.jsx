@@ -54,7 +54,7 @@ export default function Hero() {
             </Link>
             <a
               href="/Jansenn Sipagan - CV.pdf"
-              download="Jansenn Sipagan  - CV.pdf"
+              download="Jansenn Sipagan - CV.pdf"
               className="btn btn--outline btn--resume"
             >
               <FiDownload aria-hidden="true" />
