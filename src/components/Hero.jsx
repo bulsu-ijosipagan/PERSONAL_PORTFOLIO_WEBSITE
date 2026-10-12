@@ -120,7 +120,9 @@ export default function Hero() {
     "TypeScript", "Git", "GitHub", "Python",
     "React JS" 
   ],
-  passion: "Building the web"
+  passion: "Building the web", "Making user friendly design",
+           "Learning new technologies", "Making useful websites"
+
 };`}
               </code>
             </pre>
