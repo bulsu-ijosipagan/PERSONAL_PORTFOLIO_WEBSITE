@@ -44,8 +44,9 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>
-            &copy; {new Date().getFullYear()} Portfolio. Made with{" "}
-            <FiHeart className="footer__heart" /> using React
+            &copy; {new Date().getFullYear()} Personal Portfolio of Issei
+            Jansenn O. Sipagan. Made with <FiHeart className="footer__heart" />{" "}
+            using React
           </p>
         </div>
       </div>
