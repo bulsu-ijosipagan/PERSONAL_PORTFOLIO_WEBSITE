@@ -32,8 +32,8 @@ const projects = [
     description:
       "It is a system that manages the inventory of PC parts in a store. It allows users to add, update, and delete PC parts, as well as view the current inventory.",
     tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "MySQL"],
-    github: "https://github.com/bulsu-ijosipagan/REACT-TRAINING",
-    live: "https://pc-parts-inventory.vercel.app/",
+    github: "https://github.com/bulsu-ijosipagan/pc-parts-inventory",
+    live: "https://pc-parts-inventory-i6ra.vercel.app/",
   },
 
   {
