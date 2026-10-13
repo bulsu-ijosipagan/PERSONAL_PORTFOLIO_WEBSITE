@@ -71,6 +71,15 @@ const projects = [
     github: "https://github.com/bulsu-ijosipagan/Budget-Tracker",
     live: "https://budget-tracker-x8xh.vercel.app/login",
   },
+
+  {
+    title: "Parfan Bakery Website",
+    description:
+      "It is a website for a bakery that showcases their products and services. It is built with React JavaScript and CSS.",
+    tags: ["HTML", "CSS", "JavaScript", "React JavaScript"],
+    github: "https://github.com/bulsu-ijosipagan/Parfan-Website",
+    live: "https://parfan-website.vercel.app/",
+  },
 ];
 
 export default function Projects() {
