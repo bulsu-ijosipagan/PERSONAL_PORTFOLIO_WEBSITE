@@ -80,6 +80,14 @@ const projects = [
     github: "https://github.com/bulsu-ijosipagan/Parfan-Website",
     live: "https://parfan-website.vercel.app/",
   },
+  {
+    title: "AR Firness Gym Website",
+    description:
+      "It is a website for a gym that showcases their services and facilities. It is built with React JavaScript and CSS.",
+    tags: ["HTML", "CSS", "JavaScript", "React JavaScript"],
+    github: "https://github.com/bulsu-ijosipagan/Ar-FItness-Gym",
+    live: "https://ar-f-itness-gym-t7bx.vercel.app/",
+  },
 ];
 
 export default function Projects() {
