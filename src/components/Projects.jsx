@@ -88,6 +88,14 @@ const projects = [
     github: "https://github.com/bulsu-ijosipagan/Ar-FItness-Gym",
     live: "https://ar-f-itness-gym-t7bx.vercel.app/",
   },
+  {
+    title: "Smart Surfer",
+    description:
+      "Smart Surfer is a project created to help young people stay aware, recognize the signs of abuse, and stay safer in the digital world.",
+    tags: ["React JavaScript", "CSS"],
+    github: "https://github.com/bulsu-ijosipagan/Paul-Websit",
+    live: "https://smart-surfer.vercel.app/",
+  },
 ];
 
 export default function Projects() {
