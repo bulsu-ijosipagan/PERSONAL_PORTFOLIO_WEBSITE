@@ -1,7 +1,7 @@
 .about__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 64px;
   align-items: start;
 }
 
@@ -9,11 +9,11 @@
   color: var(--text-secondary);
   font-size: 1rem;
   margin-bottom: 18px;
-  line-height: 1.85;
+  line-height: 1.9;
 }
 
 .about__text strong {
-  color: var(--primary-light);
+  color: var(--accent);
 }
 
 .about__cards {
@@ -26,18 +26,19 @@
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 24px 28px;
+  padding: 18px 0;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
+  border-width: 1px 0 0;
   transition: var(--transition);
 }
 
 .about__card:hover {
   border-color: var(--primary);
-  background: var(--bg-card-hover);
-  transform: translateX(8px);
-  box-shadow: var(--shadow);
+  background: transparent;
+  transform: translateX(4px);
+  box-shadow: none;
 }
 
 .about__card-icon {

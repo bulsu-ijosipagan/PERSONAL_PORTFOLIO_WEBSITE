@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar__container container">
         <Link to="hero" smooth duration={500} className="navbar__logo">
-          &lt;<span>Dev</span>/&gt;
+          ~/portfolio
         </Link>
 
         <ul className={`navbar__links ${menuOpen ? 'active' : ''}`}>

@@ -37,7 +37,7 @@ const skills = [
   { name: "Cisco Networking", icon: <SiCisco />, color: "#1ba0d8", level: 80 },
   { name: "TypeScript", icon: <SiTypescript />, color: "#3178c6", level: 60 },
   { name: "Git", icon: <FaGit />, color: "#f05032", level: 80 },
-  { name: "GitHub", icon: <FaGithub />, color: "#000000", level: 80 },
+  { name: "GitHub", icon: <FaGithub />, color: "#ffffff", level: 80 },
 ];
 
 const networkingSkills = [
@@ -86,17 +86,17 @@ export default function Skills() {
               key={skill.name}
               style={{ animationDelay: `${i * 0.08}s` }}
             >
-              <div className="skill-card__icon" style={{ color: skill.color }}>
+              <div
+                className="skill-card__icon"
+                style={{ color: skill.color }}
+              >
                 {skill.icon}
               </div>
               <h4 className="skill-card__name">{skill.name}</h4>
               <div className="skill-card__bar">
                 <div
                   className="skill-card__progress"
-                  style={{
-                    width: `${skill.level}%`,
-                    background: skill.color,
-                  }}
+                  style={{ width: `${skill.level}%` }}
                 ></div>
               </div>
               <span className="skill-card__level">{skill.level}%</span>

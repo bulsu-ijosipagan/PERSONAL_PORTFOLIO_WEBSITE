@@ -20,10 +20,21 @@ export default function Hero() {
 
       <div className="hero__container container">
         <div className="hero__content">
-          <p className="hero__greeting">Hello, I'm</p>
-          <h1 className="hero__name">
-            A Future <span className="hero__highlight">IT Professional</span>
-          </h1>
+          <p className="hero__greeting">whoami</p>
+          <div className="hero__identity">
+            <div className="hero__photo-wrapper">
+              <div className="hero__photo-ring"></div>
+              <div className="hero__photo-ring hero__photo-ring--2"></div>
+              <img
+                src="/images/profile.jpg"
+                alt="Profile"
+                className="hero__photo"
+              />
+            </div>
+            <h1 className="hero__name">
+              Issei <span className="hero__highlight">Sipagan</span>
+            </h1>
+          </div>
           <p className="hero__tagline">
             Information Technology Student • Web Developer • Tech Enthusiast
           </p>
@@ -91,41 +102,33 @@ export default function Hero() {
         </div>
 
         <div className="hero__visual">
-          <div className="hero__photo-wrapper">
-            <div className="hero__photo-ring"></div>
-            <div className="hero__photo-ring hero__photo-ring--2"></div>
-            <img
-              src="/images/profile.jpg"
-              alt="Profile"
-              className="hero__photo"
-            />
-          </div>
           <div className="hero__code-window">
             <div className="code-window__header">
-              <span className="dot dot--red"></span>
-              <span className="dot dot--yellow"></span>
-              <span className="dot dot--green"></span>
+              <span className="code-window__prompt">session://profile</span>
+              <span className="code-window__status">ACTIVE</span>
             </div>
-            <pre className="code-window__body">
-              <code>
-                {`const developer = {
-  name: "Issei Jansenn O. Sipagan",
-  school: "Bulacan State University",
-  degree: "BS Info Tech",
-  gradYear: 2027,
-  skills: [
-    "HTML", "CSS", "JavaScript",
-    "PHP", "MySQL", "Firebase",
-    "C#", "Supabase", "Cisco Networking", 
-    "TypeScript", "Git", "GitHub", "Python",
-    "React JS" 
-  ],
-  passion: "Building the web", "Making user friendly design",
-           "Learning new technologies", "Making useful websites"
-
-};`}
-              </code>
-            </pre>
+            <div className="profile-readout">
+              <div className="profile-readout__row">
+                <span>identity</span>
+                <strong>Issei Jansenn O. Sipagan</strong>
+              </div>
+              <div className="profile-readout__row">
+                <span>role</span>
+                <strong>IT student / web developer</strong>
+              </div>
+              <div className="profile-readout__row">
+                <span>base</span>
+                <strong>Bulacan State University</strong>
+              </div>
+              <div className="profile-readout__row">
+                <span>focus</span>
+                <strong>web systems + networking</strong>
+              </div>
+            </div>
+            <div className="code-window__footer">
+              <span><i></i> accepting new challenges</span>
+              <span>2027 → graduation</span>
+            </div>
           </div>
         </div>
       </div>

@@ -4,14 +4,14 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 18px 0;
+  padding: 20px 0;
   transition: var(--transition);
   background: transparent;
 }
 
 .navbar.scrolled {
-  background: rgba(10, 10, 26, 0.92);
-  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   padding: 12px 0;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
@@ -24,29 +24,26 @@
 }
 
 .navbar__logo {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.05rem;
+  font-weight: 500;
   font-family: 'Fira Code', monospace;
   color: var(--text-primary);
   cursor: pointer;
 }
 
 .navbar__logo span {
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: inherit;
 }
 
 .navbar__links {
   display: flex;
-  gap: 36px;
+  gap: 24px;
 }
 
 .navbar__links li a {
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-muted);
   cursor: pointer;
   transition: var(--transition);
   position: relative;
@@ -60,14 +57,14 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--gradient-1);
+  background: var(--primary);
   transition: var(--transition);
   border-radius: 2px;
 }
 
 .navbar__links li a:hover,
 .navbar__links li a.active {
-  color: var(--text-primary);
+  color: var(--primary-light);
 }
 
 .navbar__links li a:hover::after,
