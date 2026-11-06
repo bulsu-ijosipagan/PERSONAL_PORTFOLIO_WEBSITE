@@ -26,7 +26,7 @@ export default function Hero() {
               <div className="hero__photo-ring"></div>
               <div className="hero__photo-ring hero__photo-ring--2"></div>
               <img
-                src="/images/profile.jpg"
+                src="/images/id_jansenn.png"
                 alt="Profile"
                 className="hero__photo"
               />
@@ -126,7 +126,9 @@ export default function Hero() {
               </div>
             </div>
             <div className="code-window__footer">
-              <span><i></i> accepting new challenges</span>
+              <span>
+                <i></i> accepting new challenges
+              </span>
               <span>2027 → graduation</span>
             </div>
           </div>
