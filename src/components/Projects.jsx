@@ -1,4 +1,4 @@
-import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { FiExternalLink } from "react-icons/fi";
 import "./Projects.css";
 
 const projects = [
@@ -7,7 +7,6 @@ const projects = [
     description:
       "It is a gate system that uses RFID technology to control access to the campus. It allows students and staff to enter and exit the campus using their ID cards.",
     tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/bulsu-ijosipagan/BulSU-Gate-System",
     live: "#",
   },
   {
@@ -15,8 +14,6 @@ const projects = [
     description:
       "It is a System that manages the operations of a dental clinic, including patient records, appointments, billing, and inventory management. It is built with Java with GUI and MySQL database.",
     tags: ["Java", "MySQL", "JavaFX"],
-    github:
-      "https://github.com/bulsu-ijosipagan/Dental_Clinic_Management_System",
     live: "#",
   },
   {
@@ -24,7 +21,6 @@ const projects = [
     description:
       "It is a project that demonstrates the use of event-driven programming concepts. It is built with Java and MySQL database. It allows users to create and manage events, with a GUI interface.",
     tags: ["Java", "MySQL", "JavaFX"],
-    github: "https://github.com/bulsu-ijosipagan/MidYear_Project_2025",
     live: "#",
   },
   {
@@ -32,7 +28,6 @@ const projects = [
     description:
       "It is a system that showcase a list of PC parts. This system is just a showcase of my skills in web development, it is built with React JavaScript.",
     tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "MySQL"],
-    github: "https://github.com/bulsu-ijosipagan/pc-parts-inventory",
     live: "https://pc-parts-inventory-i6ra.vercel.app/",
   },
 
@@ -41,7 +36,6 @@ const projects = [
     description:
       "It is a system that manages student records, that allows the admin to operate CRUD operations on student records, as well as view the current students in the system.",
     tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "MySQL"],
-    github: "https://github.com/bulsu-ijosipagan/Student_Management_System",
     live: "#",
   },
 
@@ -50,7 +44,6 @@ const projects = [
     description:
       "It is a web application that allows users to explore different bands and their music. It is built with React JavaScript and uses the Spotify API to fetch band information and music.",
     tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "Spotify API"],
-    github: "https://github.com/bulsu-ijosipagan/Band-Explorer",
     live: "https://bandexplorer.netlify.app/",
   },
 
@@ -59,7 +52,6 @@ const projects = [
     description:
       "It is a personal portfolio website that showcases my projects, skills, and experience. It is built with React JavaScript and CSS.",
     tags: ["HTML", "CSS", "JavaScript", "React JavaScript"],
-    github: "https://github.com/bulsu-ijosipagan/Personal_Portfolio_Website",
     live: "#",
   },
 
@@ -68,7 +60,6 @@ const projects = [
     description:
       "It is a web application that allows users to track their budget. It is built with React JavaScript and uses a MySQL database to store expense data.",
     tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "MySQL"],
-    github: "https://github.com/bulsu-ijosipagan/Budget-Tracker",
     live: "https://budget-tracker-x8xh.vercel.app/login",
   },
 
@@ -77,7 +68,6 @@ const projects = [
     description:
       "It is a website for a bakery that showcases their products and services. It is built with React JavaScript and CSS.",
     tags: ["HTML", "CSS", "JavaScript", "React JavaScript"],
-    github: "https://github.com/bulsu-ijosipagan/Parfan-Website",
     live: "https://parfan-website.vercel.app/",
   },
   {
@@ -85,7 +75,6 @@ const projects = [
     description:
       "It is a website for a gym that showcases their services and facilities. It is built with React JavaScript and CSS.",
     tags: ["HTML", "CSS", "JavaScript", "React JavaScript"],
-    github: "https://github.com/bulsu-ijosipagan/Ar-FItness-Gym",
     live: "https://ar-f-itness-gym-t7bx.vercel.app/",
   },
   {
@@ -93,7 +82,6 @@ const projects = [
     description:
       "Smart Surfer is a project created to help young people stay aware, recognize the signs of abuse, and stay safer in the digital world.",
     tags: ["React JavaScript", "CSS"],
-    github: "https://github.com/bulsu-ijosipagan/Paul-Websit",
     live: "https://smart-surfer.vercel.app/",
   },
 ];
@@ -128,14 +116,6 @@ export default function Projects() {
                   </svg>
                 </div>
                 <div className="project-card__links">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="GitHub"
-                  >
-                    <FiGithub />
-                  </a>
                   <a
                     href={project.live}
                     target="_blank"
